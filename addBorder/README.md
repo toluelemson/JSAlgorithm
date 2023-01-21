@@ -21,7 +21,7 @@ the output should be
 -   unshift()
 -   push()
 
-via: [yoruba.dev](http://www.yoruba.dev)
+optimize via: [yoruba.dev](http://www.yoruba.dev)
 
 **Solution: Add Border**
 
@@ -56,7 +56,24 @@ export function addBorder(picture: string[]): string[] {
     return picture;
 }
 ```
-via: [yoruba.dev](http://www.yoruba.dev)
+via: [yoruba.dev](http://www.yoruba.dev) 
+
+
+``` javascript
+function addBorder(picture: string[]): string[] {
+
+    let wall = "*".padStart(picture[0].length + 2, "*");
+    let picture: string[] = [wall]
+    picture [picture.length] = wall
+    
+    for (let i: number = 1; i < picture.length; i++){
+        picture[i] = "*" + picture[i-1] + "*"
+    }
+
+    return picture
+}
+```
+optimized by: [Ufedo](http://www.yoruba.dev)
 
 **Input/Output**
 - **[time limit] 4000ms (js)**
