@@ -58,7 +58,7 @@ export function addBorder(picture: string[]): string[] {
 ```
 via: [yoruba.dev](http://www.yoruba.dev) 
 
-
+**Optimized Solution: Add Border**
 ``` javascript
 function addBorder(picture: string[]): string[] {
 
@@ -73,7 +73,14 @@ function addBorder(picture: string[]): string[] {
     return picture
 }
 ```
-optimized by: [Ufedo](http://www.yoruba.dev)
+
+This function has a time 
+complexity of O(n) where n is the number of element in the picture array since it iterates through the picture array once.
+
+
+
+
+via: [yoruba.dev](http://www.yoruba.dev)
 
 **Input/Output**
 - **[time limit] 4000ms (js)**

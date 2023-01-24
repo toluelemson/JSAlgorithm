@@ -19,13 +19,12 @@ function addBorder2(picture: string[]): string[] {
     let wall = "*".padStart(picture[0].length + 2, "*");
     let border: string[] = [wall]
     border[picture.length] = wall
-
     for (let i: number = 1; i < picture.length; i++){
         border[i] = "*" + picture[i-1] + "*"
     }
-
     return border
 }
+console.log(addBorder2(["abc", "ded"])); //
 // picture = ["abc",
 //     "ded"]
 
